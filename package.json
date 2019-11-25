@@ -1,22 +1,32 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
-  "devDependencies": {
-    "electron": "^7.1.2"
-  }
+	"name": "electron-quick-start",
+	"version": "1.0.0",
+	"description": "A minimal Electron application",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron .",
+		"makeappimage": "electron-builder build --linux appimage --x64",
+		"makedeb": "electron-builder build --linux deb --x64",
+		"makerpm": "electron-builder build --linux rpm --x64",
+		"maketar": "electron-builder build --linux tar.xz --x64",
+		"makearmdeb": "electron-builder build --linux deb --arm64",
+		"makearmrpm": "electron-builder build --linux rpm --arm64",
+		"makearmtar": "electron-builder build --linux tar.xz --arm64",
+		"makeexe": "electron-builder build --win nsis",
+		"makedmg": "electron-builder build --mac dmg"
+	},
+	"repository": "https://github.com/electron/electron-quick-start",
+	"keywords": [
+		"Electron",
+		"quick",
+		"start",
+		"tutorial",
+		"demo"
+	],
+	"author": "GitHub",
+	"license": "CC0-1.0",
+	"devDependencies": {
+		"electron": "^7.1.2",
+		"electron-builder": "^21.2.0"
+	}
 }

@@ -1,0 +1,16 @@
+--- Linux x64 ---
+npm run makeappimage
+npm run makedeb
+npm run makerpm
+npm run maketar
+
+--- Linux ARM64 ---
+npm run makearmdeb
+npm run makearmrpm
+npm run makearmtar
+
+--- Windows ---
+npm run makeexe
+
+--- Mac OS ---
+npm run makedmg

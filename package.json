@@ -23,7 +23,54 @@
 		"tutorial",
 		"demo"
 	],
-	"author": "GitHub",
+	"build": {
+		"appId": "electron.quick.start",
+		"asar": true,
+		"protocols": [
+		    {
+		        "name": "Electron-Quick-Start",
+		        "schemes": [
+		            "electronquickstart"
+		        ]
+		    }
+		],
+		"mac": {
+		    "icon": "icons/main.icns",
+		    "target": [
+		        "zip"
+		    ]
+		},
+		"win": {
+		    "target": [
+		        "nsis",
+		        "zip"
+		    ],
+		    "icon": "icons/main.ico"
+		},
+		"linux": {
+		    "protocols": {
+		        "name": "ElectronQuickStart",
+		        "schemes": [
+		            "electronquickstart"
+		        ]
+		    },
+		    "target": [
+		        "AppImage",
+		        "deb",
+		        "rpm",
+		        "zip",
+		        "tar.xz"
+		    ],
+		    "desktop": {
+		        "Icon": "electronquickstart"
+		    }
+		}
+	    },
+	    "author": {
+        	"name": "Filipe",
+        	"email": "filipe.ferraz0@gmail.com",
+        	"url": "https://github.com/FilipeChagasDev/electron-quick-start"
+    	},
 	"license": "CC0-1.0",
 	"devDependencies": {
 		"electron": "^7.1.2",

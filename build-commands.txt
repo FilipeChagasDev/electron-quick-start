@@ -10,6 +10,7 @@ npm run makearmrpm
 npm run makearmtar
 
 --- Windows ---
+*** wine required ***
 npm run makeexe
 
 --- Mac OS ---
